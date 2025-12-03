@@ -368,8 +368,7 @@ void change_cost (int x, int y, int v, int rad){
 
         cdist++; // Increment the current distance to visit the adjacent nodes
         
-        // In case the currewnt distance (which is the one of next) is 
-        // Nel caso in cui la distanza corrente (successiva) sia almeno pari a rad nobn devo aggiungewre nessuna cella alla coda
+        // In case the current distance ≥ radius there is no need to add more cells to the queue
         if (cdist < rad){
             if ((curr->row & 1) == 0){
                 // Cella pari 
